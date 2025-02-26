@@ -4,8 +4,8 @@ import user from'../assets/user.jpeg'
 import {  FiSearch } from "react-icons/fi";
 import {  FiHome } from "react-icons/fi";
 import {  FiFlag } from "react-icons/fi";
-import {  FiPlay} from "react-icons/fi";
-import {  FiShoppingCart } from "react-icons/fi";
+import {  FiVideo} from "react-icons/fi";
+import {  FiShoppingBag } from "react-icons/fi";
 import {  FiUsers } from "react-icons/fi";
 import { FiMenu, FiMessageSquare, FiBell, FiArrowDown } from "react-icons/fi";
 
@@ -32,11 +32,12 @@ const Header = () => {
 
       {/* // Start Center Navigation */}
       <div className=" flex items-center space-x-13">
-        <a href='#' className=' hover:bg-blue-300 hover:border-b-2 hover:border-blue-600 py-2 px-2'> <FiHome/></a>
-        <a href='#' className=' hover:bg-blue-300 hover:border-b-2 hover:border-blue-600 py-2 px-2'> <FiFlag/></a>
-        <a href='#' className=' hover:bg-blue-300 hover:border-b-2 hover:border-blue-600 py-2 px-2'>  <FiPlay/></a>
-        <a href='#' className=' hover:bg-blue-300 hover:border-b-2 hover:border-blue-600 py-2 px-2'> <FiShoppingCart/></a>
-        <a href='#' className=' hover:bg-blue-300 hover:border-b-2 hover:border-blue-600 py-2 px-2'>  <FiUsers/></a>
+        <a href='#' className='  hover:border-b-2 hover:border-blue-600 py-2 px-2'> <FiHome size={25} color='blue'/></a>
+        <a href='#' className='  hover:border-b-2 hover:border-blue-600 py-2 px-2'>  <FiUsers size={25}/></a>
+        <a href='#' className='  hover:border-b-2 hover:border-blue-600 py-2 px-2'>  <FiVideo size={25}/></a>
+        <a href='#' className='  hover:border-b-2 hover:border-blue-600 py-2 px-2'> <FiShoppingBag size={25}/></a>
+        
+       
         
          
         
@@ -50,19 +51,21 @@ const Header = () => {
 
       <div className=" flex items-center space-x-4">
         
-        <div className="flex items-center space-x-2">
-          <img className=' rounded-[50%] w-[40px] h-[40px] ' src={user} alt='user image' />
-          <h1 className=' font-semibold  '>Sumayo Axmad</h1>
-        </div>
+      
 
         <div className="flex items-center space-x-3">
            
-           <span className=' bg-gray-200 rounded-[50%] py-2 px-3 '> <FiMenu/></span>
-           <span className=' bg-gray-200 rounded-[50%] py-2 px-3 '> <FiMessageSquare/></span>
-           <span className=' bg-gray-200 rounded-[50%] py-2 px-3 '><FiBell/>  </span>
-           <span className=' bg-gray-200 rounded-[50%] py-2 px-3 '><FiArrowDown/>  </span>
+           <span className=' bg-gray-200 rounded-[50%] py-3 px-3 '> <FiMenu/></span>
+           <span className=' bg-gray-200 rounded-[50%] py-3 px-3 '> <FiMessageSquare/></span>
+           <span className=' bg-gray-200 rounded-[50%] py-3 px-3 '><FiBell/>  </span>
+           
 
 
+        </div>
+
+        <div className="flex items-center space-x-2">
+          <img className=' rounded-[50%] w-[40px] h-[40px] ' src={user} alt='user image' />
+          {/* <h1 className=' font-semibold  '>Sumayo Axmad</h1> */}
         </div>
         
       </div>
